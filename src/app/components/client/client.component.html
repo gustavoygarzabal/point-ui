@@ -1,0 +1,8 @@
+<form class="form" [formGroup]="clientForm">
+    <mat-form-field class="client-input" (ngSubmit)="addClient()">
+      <mat-label>Nombre del Cliente</mat-label>
+      <input matInput formControlName = "name">
+    </mat-form-field>
+    <button mat-raised-button color="primary" class="form-button" (click)="addClient()">Agregar</button>
+</form>
+<app-client-table></app-client-table>
